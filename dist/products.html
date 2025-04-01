@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Business Casual - Start Bootstrap Theme</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Google fonts-->
+    <link
+        href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <!-- Custom CSS Animations -->
+    <style>
+        /* Keyframe for header fade-in */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Header text animation */
+        .site-heading {
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in-out forwards;
+        }
+
+        /* Button hover effect */
+        .animated-button {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .animated-button:hover {
+            transform: scale(1.1);
+            background-color: #3498db !important;
+        }
+
+        /* Navbar basic transition and opaque background */
+        .navbar {
+            transition: background-color 0.3s ease-in-out, box-shadow 0.3s;
+            background-color: rgb(30, 119, 212) !important;
+        }
+
+        .navbar.scrolled {
+            background-color: rgb(30, 119, 212) !important;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Navigation Link Hover Effect */
+        .navbar-nav .nav-link {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .navbar-nav .nav-link::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background-color: #fff;
+            transition: width 0.3s ease, left 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover::after {
+            width: 100%;
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">ACM Student Chapter</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Home</a></li>
+                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="about.html">About Us</a></li>
+                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="products.html">Team</a>
+                    </li>
+                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="events.html">Events</a></li>
+                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="store.html">Contact Us</a>
+                    </li>
+                    <!-- <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="store.html">Gallery</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <h1 class="site-heading text-center text-faded d-none d-lg-block">
+            <span class="site-heading-upper text-primary mb-3">ACM Student Chapter</span>
+            <span class="site-heading-lower">Our Team</span>
+        </h1>
+        <style>
+            body {
+                text-align: center;
+                font-family: Arial, sans-serif;
+            }
+
+            .row,
+            .centered {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                margin-bottom: 10px;
+            }
+
+            figure {
+                text-align: center;
+                margin: 0;
+            }
+
+            figcaption {
+                margin-top: 10px;
+                font-size: 26px;
+                /* Ensures optimal readability */
+                /* font-weight: bold; */
+                color: white;
+                /* Dark gray text color */
+                background-color: transparent;
+                /* Removes background color */
+                padding: 8px;
+                border-radius: 8px;
+                display: inline-block;
+                max-width: 100%;
+                /* Maintains responsiveness */
+                text-align: center;
+                /* Centers text within the caption */
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                /* Specifies Georgia font with fallbacks */
+            }
+
+            .row figure,
+            .centered figure {
+                width: 31%;
+            }
+
+            img {
+                width: 100%;
+                /* height: auto; */
+                max-height: 480px;
+                /* Controls height */
+                object-fit: cover;
+                /* Ensures images don’t stretch */
+                border-radius: 20px;
+                /* Makes the border rounded */
+                box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+                /* border: 5px solid #ddd; */
+                /* Optional: Adds a soft border */
+            }
+
+            /* figcaption {
+                margin-top: 5px;
+                font-size: 16px;
+                font-weight: bold;
+                color: yellow;
+            } */
+        </style>
+    </header>
+    <!-- First Row (3 Images) -->
+    <div class="row">
+        <figure>
+            <img src="assets/img/teampic2-TM.JPG" alt="Image 1">
+            <figcaption>Trisha Mukherjee - Chair</figcaption>
+        </figure>
+        <figure>
+            <img src="assets/img/Aryan.png" alt="Image 2">
+            <figcaption>Aryan Mukherjee - Vice Chair</figcaption>
+        </figure>
+        <figure>
+            <img src="assets/img/Devanshi_Rhea_Aucharaz.jpg" alt="Image 3" height="480px">
+            <figcaption>Devanshi Rhea Aucharaz - Treasurer</figcaption>
+        </figure>
+    </div>
+
+    <!-- Second Row (3 Images) -->
+    <div class="centered">
+        <figure>
+            <img src="assets/img/teampic1-AK.jpeg" alt="Image 4" width="40%">
+            <figcaption>Aaryaveer Katoch - Membership Chair</figcaption>
+        </figure>
+        <figure>
+            <img src="assets/img/Aayush_Aneja_Formal.JPG" alt="Image 5" width="40%">
+            <figcaption>Aayush Aneja - Secretary</figcaption>
+        </figure>
+        <figure>
+            <img src="assets/img/ashwat.jpeg" alt="Image 5" width="40%">
+            <figcaption>Ashwat Sureka - Webmaster</figcaption>
+        </figure>
+    </div>
+
+    <!-- <section class="page-section">
+        <div class="container">
+            <div class="product-item">
+                <div class="product-item-title d-flex">
+                    <div class="bg-faded p-5 d-flex ms-auto rounded">
+                        <h2 class="section-heading mb-0">
+                            <span class="section-heading-upper">Blended to Perfection</span>
+                            <span class="section-heading-lower">Coffees & Teas</span>
+                        </h2>
+                    </div>
+                </div>
+                <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0"
+                    src="assets/img/products-01.jpg" alt="..." />
+                <div class="product-item-description d-flex me-auto">
+                    <div class="bg-faded p-5 rounded">
+                        <p class="mb-0">We take pride in our work, and it shows. Every time you order a beverage from
+                            us, we guarantee that it will be an experience worth having. Whether it's our world famous
+                            Venezuelan Cappuccino, a refreshing iced herbal tea, or something as simple as a cup of
+                            speciality sourced black coffee, you will be coming back for more.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- <section class="page-section">
+        <div class="container">
+            <div class="product-item">
+                <div class="product-item-title d-flex">
+                    <div class="bg-faded p-5 d-flex me-auto rounded">
+                        <h2 class="section-heading mb-0">
+                            <span class="section-heading-upper">Delicious Treats, Good Eats</span>
+                            <span class="section-heading-lower">Bakery & Kitchen</span>
+                        </h2>
+                    </div>
+                </div>
+                <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0"
+                    src="assets/img/products-02.jpg" alt="..." />
+                <div class="product-item-description d-flex ms-auto">
+                    <div class="bg-faded p-5 rounded">
+                        <p class="mb-0">Our seasonal menu features delicious snacks, baked goods, and even full meals
+                            perfect for breakfast or lunchtime. We source our ingredients from local, oragnic farms
+                            whenever possible, alongside premium vendors for specialty goods.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- <section class="page-section">
+        <div class="container">
+            <div class="product-item">
+                <div class="product-item-title d-flex">
+                    <div class="bg-faded p-5 d-flex ms-auto rounded">
+                        <h2 class="section-heading mb-0">
+                            <span class="section-heading-upper">From Around the World</span>
+                            <span class="section-heading-lower">Bulk Speciality Blends</span>
+                        </h2>
+                    </div>
+                </div>
+                <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0"
+                    src="assets/img/products-03.jpg" alt="..." />
+                <div class="product-item-description d-flex me-auto">
+                    <div class="bg-faded p-5 rounded">
+                        <p class="mb-0">Travelling the world for the very best quality coffee is something take pride
+                            in. When you visit us, you'll always find new blends from around the world, mainly from
+                            regions in Central and South America. We sell our blends in smaller to large bulk
+                            quantities. Please visit us in person for more details.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <footer class="footer text-faded text-center py-5">
+        <div class="container">
+            <p class="m-0 small">Copyright &copy; ACM SP Jain Global 2025</p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

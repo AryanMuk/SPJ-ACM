@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Business Casual - Start Bootstrap Theme</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Google fonts-->
+    <link
+        href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <!-- Custom CSS Animations -->
+    <style>
+        /* Keyframe for header fade-in */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Header text animation */
+        .site-heading {
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in-out forwards;
+        }
+
+        /* Button hover effect */
+        .animated-button {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .animated-button:hover {
+            transform: scale(1.1);
+            background-color: #3498db !important;
+        }
+
+        /* Navbar basic transition and opaque background */
+        .navbar {
+            transition: background-color 0.3s ease-in-out, box-shadow 0.3s;
+            background-color: rgb(30, 119, 212) !important;
+        }
+
+        .navbar.scrolled {
+            background-color: rgb(30, 119, 212) !important;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Navigation Link Hover Effect */
+        .navbar-nav .nav-link {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .navbar-nav .nav-link::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background-color: #fff;
+            transition: width 0.3s ease, left 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover::after {
+            width: 100%;
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4 fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">ACM Student Chapter</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Home</a></li>
+                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="about.html">About Us</a></li>
+                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="products.html">Team</a></li>
+                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="events.html">Events</a></li>
+                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="store.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <h1 class="site-heading text-center text-faded d-none d-lg-block">
+            <span class="site-heading-upper text-primary mb-3">We Are SP Jain student chapter</span>
+            <span class="site-heading-lower">About Us</span>
+        </h1>
+    </header>
+    <section class="page-section about-heading">
+        <div class="container">
+            <div class="row align-items-center mb-5"> <!-- Row for ACM Section -->
+                <div class="col-lg-6 text-center"> <!-- Image on Left -->
+                    <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0 mx-auto d-block"
+                        src="assets/img/about.webp" alt="ACM Image" />
+                </div>
+                <div class="col-lg-6"> <!-- ACM Content on Right -->
+                    <div class="bg-faded rounded p-5">
+                        <h2 class="section-heading mb-4">
+                            <span class="section-heading-upper">PIONEERING | CATALYZE | FORESIGHT</span>
+                            <span class="section-heading-lower">About ACM</span>
+                        </h2>
+                        <p>
+                            The Association for Computing Machinery (ACM) is the world’s largest and most influential
+                            computing society,
+                            dedicated to advancing the field of computing through research, education, and
+                            collaboration. Founded in 1947,
+                            ACM connects a global community of professionals, educators, and students, providing access
+                            to top-tier research
+                            publications, conferences, and learning resources.
+                        </p>
+                        <p>
+                            With its various special interest groups and local chapters, ACM fosters innovation,
+                            promotes technological
+                            advancements, and empowers individuals to shape the future of computing. Whether through
+                            networking,
+                            professional development, or groundbreaking research, ACM remains at the forefront of the
+                            digital revolution.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SP JAIN Section -->
+            <div class="row align-items-center"> <!-- Row for SP Jain Section -->
+                <div class="col-lg-6 order-lg-2 text-center"> <!-- Image on Right -->
+                    <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0 mx-auto d-block"
+                        src="assets/img/spjain.jpg" alt="SP Jain Image" />
+                </div>
+                <div class="col-lg-6 order-lg-1"> <!-- SP Jain Content on Left -->
+                    <div class="bg-faded rounded p-5">
+                        <h2 class="section-heading mb-4">
+                            <span class="section-heading-lower">About SP Jain Global</span>
+                        </h2>
+                        <p>
+                            SP Jain School of Global Management is a world-class business school with campuses in Dubai,
+                            Mumbai,
+                            Singapore, and Sydney. Leveraging its innovative and internationally focused model of
+                            education,
+                            SP Jain offers globally competitive programs in business, management, and technology.
+                        </p>
+                        <p>
+                            With a combination of experiential learning, industry experience, and multicultural
+                            insights,
+                            SP Jain prepares students to thrive in rapidly evolving global economies. With a focus on
+                            leadership,
+                            entrepreneurship, and cutting-edge technology, SP Jain continues to shape the business
+                            leaders and
+                            entrepreneurs of tomorrow.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer text-faded text-center py-5">
+        <div class="container">
+            <p class="m-0 small">Copyright &copy; Your Website 2023</p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
